@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import LeftContainerBottom from '../LeftContainerBottom/LeftContainerBottom';
+import RightContainerBottom from '../RightContainerBottom/RightContainerBottom';
 
-
-function BottomHalfHalf() {
+function BottomHalf() {
 
 
 
@@ -16,4 +17,4 @@ function BottomHalfHalf() {
     )
 }
 
-export default BottomHalfHalf;
+export default BottomHalf;
