@@ -1,0 +1,16 @@
+.container {
+  width: 50vw;
+  border-right: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.container__top {
+  border-bottom: 3px solid blue;
+  padding-bottom: 2rem;
+  border-top: 3px solid blue;
+  padding-top: 2rem;
+}
+.container__bottom {
+  border-bottom: 3px solid blue;
+  padding-bottom: 2rem;
+}/*# sourceMappingURL=LeftContainerBottom.css.map */
