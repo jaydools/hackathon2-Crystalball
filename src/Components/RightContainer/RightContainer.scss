@@ -1,0 +1,20 @@
+@use "../../styles/global" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/global"  as *; 
+
+.explination {
+    padding: 1rem;
+    background-color: $MainColour;      // variables ARE working
+    width: 40%;
+
+    &__header {
+        // @include mobileH2;          // font mixins arent working -_- 
+        color: $OffWhite;
+    }
+
+    &__text {
+        background-color: $Fourth;
+        border-radius: $buttonRadius;
+        padding: 1rem;
+    }
+}
