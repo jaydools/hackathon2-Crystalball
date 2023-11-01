@@ -1,14 +1,16 @@
+import "./LeftContainer.scss"
+
 function LeftContainer() {
 
 
 
     return (
-        <div>
-            <div className="activity">
-                <h1>Choose Activity</h1>
+        <div className="activity">
+            <div className="activity__textbox">
+                <h1 className="activity__textbox--font">Choose Activity</h1>
             </div>
-            <div>
-                <button>Random</button>
+            <div className="activity__button">
+                <button className="activity__button--clicker">Random</button>
             </div>
 
         </div>
