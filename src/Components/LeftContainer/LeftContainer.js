@@ -1,4 +1,4 @@
-function LeftContainer() {
+const LeftContainer = () => {
 
 
 
