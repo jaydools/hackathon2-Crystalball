@@ -11,8 +11,10 @@ function TopHalf() {
 
     return (
         <body>
-            <LeftContainer />
-            <RightContainer />
+            <div>
+                <LeftContainer />
+                <RightContainer />
+            </div>
         </body>
     )
 }
