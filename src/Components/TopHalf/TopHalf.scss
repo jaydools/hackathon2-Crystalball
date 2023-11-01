@@ -1,0 +1,9 @@
+@use "../../styles/global" as *;
+@use "../../styles/variables" as*;
+@use "../../styles/global"  as *;
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid pink;
+}
