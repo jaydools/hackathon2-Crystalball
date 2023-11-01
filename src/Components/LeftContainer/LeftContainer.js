@@ -3,7 +3,7 @@ function LeftContainer() {
 
 
     return (
-        <body>
+        <div>
             <div className="activity">
                 <h1>Choose Activity</h1>
             </div>
@@ -11,7 +11,7 @@ function LeftContainer() {
                 <button>Random</button>
             </div>
 
-        </body>
+        </div>
     )
 }
 

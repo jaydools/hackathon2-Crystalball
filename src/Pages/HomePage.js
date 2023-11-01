@@ -13,7 +13,7 @@ function HomePage() {
 
     return (
         <body>
-            <Nav />
+            {/* <Nav /> */}
             <TopHalf />
             <BottomHalf />
         </body>
