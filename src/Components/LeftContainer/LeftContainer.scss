@@ -6,11 +6,10 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-               // move this if you want to move main content up or down
-    height: 70vh;
     width: 60%;
     background-image: url("../../../public/magic-ball.jpg");
     background-size: cover;
+    background-position: right;
 
     &__textbox {
         border: 1px solid red;
@@ -36,6 +35,7 @@
             border-radius: $buttonRadius;
             border: none;
             margin: 1rem;
+            color: $OffWhite;
         }
     }
 }
