@@ -5,7 +5,7 @@ import RightContainerBottom from '../RightContainerBottom/RightContainerBottom';
 import './BottomHalf.scss'
 
 function BottomHalf() {
-
+    const [activity, setActivity] = useState({}); // State to track the selected option
 
 
 
@@ -13,8 +13,10 @@ function BottomHalf() {
     return (
         <body>
             <div className='containerBottomHalf'>
-            <LeftContainerBottom />
-            <RightContainerBottom />
+            <LeftContainerBottom 
+            activity={activity}
+            setActivity={setActivity}/>
+            <RightContainerBottom activity={activity}/>
             </div>
         </body>
     )

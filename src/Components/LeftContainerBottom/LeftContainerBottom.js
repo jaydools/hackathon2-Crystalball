@@ -2,17 +2,16 @@ import './LeftContainerBottom.scss';
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function LeftContainerBottom() {
-    const [activity, setActivity] = useState({}); // State to track the selected option
-    
-  const handleSubmitRan = (event) => {
-    event.preventDefault();
-    async function RandomAct(){
-        const act = await axios.get(`https://www.boredapi.com/api/activity/`)
-        console.log(act.data)
-        setActivity(act.data)
-      }
-      RandomAct()
+function LeftContainerBottom({ activity, setActivity }) {
+
+    const handleSubmitRan = (event) => {
+        event.preventDefault();
+        async function RandomAct(){
+            const act = await axios.get(`https://www.boredapi.com/api/activity/`)
+            console.log(act.data)
+            setActivity(act.data)
+        }
+        RandomAct()
   }
   const handleSubmitPart = (event) => {
     event.preventDefault();
@@ -47,21 +46,15 @@ function LeftContainerBottom() {
                 </form>
                 
                 <div className="container__bottom">
-                    <h2>Price Point</h2>
-                    <form onSubmit={handleSubmitFree}>
-                    <div>
-            <button type="submit">Free</button>
-          </div>
-          </form>
-          <form onSubmit={handleSubmitFree}>
-          <div>
-            <button type="submit">Not Free</button>
-          </div>
-          </form>
-          </div>
-          
-        
-        
+                    <div className="container__card2">
+                        <h2>Price Point</h2>
+                        <form onSubmit={handleSubmitFree}>
+                        <button type="submit" className='button2'>Free</button>
+                        </form>
+                        <form onSubmit={handleSubmitFree}>
+                        <button type="submit" className='button3'>Not Free</button>
+                        </form>
+                 </div>
             </div>
         </body>
     )
