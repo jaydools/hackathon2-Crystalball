@@ -23,6 +23,7 @@ function LeftContainerBottom() {
         const num = formData.get('number');
             const act = await axios.get(`https://www.boredapi.com/api/activity?participants=${num}`)
             setActivity(act.data)
+            console.log(act.data)
         }
         PartAct()
   }
@@ -32,6 +33,7 @@ function LeftContainerBottom() {
         async function FreeAct(){
             const act = await axios.get(`https://www.boredapi.com/api/activity?price=0.0`)
             setActivity(act.data)
+            console.log(act.data)
         }
         FreeAct()
   }
