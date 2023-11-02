@@ -1,0 +1,104 @@
+@use "../../styles/global" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/global"  as *; 
+
+.container {
+    background-color: $MainColour;
+    color: $OffWhite;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+
+    &__card {
+        width: 44vw;
+        margin-left: 2rem;
+        background-color:$Fourth;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border-radius: .25rem;
+    }
+
+    &__card2 {
+        width: 44vw;
+        margin: 1rem;
+        background-color:$Fourth;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border-radius: .25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--title {
+            color: $White;
+        }
+    }
+
+    &__top {
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--button {
+            margin-left: .5rem;
+            width: 90px;
+            height: 2rem;
+            border-radius: $CircleButton;
+            border: 2px solid $Fourth;
+            color: $White;
+            background-color: transparent;
+            margin-top: .25rem;
+            
+        }
+
+        &--form {
+            width: 30vw;
+            border-radius: $CircleButton;
+            border: none;
+        }
+
+        &--title {
+            margin: 0 0 .25rem 0;
+        }
+    }
+    &__bottom {
+        margin-bottom: 2.2rem;
+    }
+}
+
+.submitBox {
+    width: 13vw;
+    height: 2rem;
+    border-radius: .25rem;
+    border: $Fourth
+}
+.button1 {
+    width: 15rem;
+    background-color: $Fourth;
+    text-align: center;
+    padding: 1.25rem;
+    border-radius: $buttonRadius;
+    border: none;
+    color: $MainColour
+}
+
+.button2 {
+    width: 40vw;
+    height: 2rem;
+    border-radius: $CircleButton;
+    border: none;
+    color: #84A98C;
+    background-color: #FFFFFF;
+    margin-bottom: .25rem;
+}
+.button3 {
+    width: 40vw;
+    height: 2rem;
+    border-radius: $CircleButton;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #84A98C;
+}
