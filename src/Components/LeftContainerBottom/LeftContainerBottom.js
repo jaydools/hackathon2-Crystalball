@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function LeftContainerBottom() {
-    const [activity, setActivity] = useState([]); // State to track the selected option
-
+    const [activity, setActivity] = useState({}); // State to track the selected option
     const handleSubmitRan = (event) => {
         event.preventDefault();
         async function RandomAct(){
@@ -57,8 +56,6 @@ function LeftContainerBottom() {
                         <h2>Price Point</h2>
                         <form onSubmit={handleSubmitFree}>
                         <button type="submit" className='button2'>Free</button>
-                        </form>
-                        <form onSubmit={handleSubmitFree}>
                         <button type="submit" className='button3'>Not Free</button>
                         </form>
                  </div>

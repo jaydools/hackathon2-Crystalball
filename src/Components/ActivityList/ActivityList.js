@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ActivityList = ({ activities }) => {
+const ActivityList = ({ activity }) => {
   return (
     <div>
-      {activities &&
-      activities.map((activity, index) => (
+      {activity &&
+      activity.map((activity, index) => (
         <div key={index}>
           <h2>{activity.activity}</h2>
           <p>Type: {activity.type}</p>
