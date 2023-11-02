@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-function LeftContainerBottom() {
-    const [activity, setActivity] = useState({}); // State to track the selected option
+function LeftContainerBottom({ activity, setActivity }) {
+
     const handleSubmitRan = (event) => {
         event.preventDefault();
         async function RandomAct(){
