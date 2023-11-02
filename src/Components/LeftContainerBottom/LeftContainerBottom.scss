@@ -14,7 +14,7 @@
     &__card {
         width: 44vw;
         margin-left: 2rem;
-        background-color: #84A98C;
+        background-color:$Fourth;
         padding-left: 1rem;
         padding-bottom: 1rem;
         border-radius: .25rem;
@@ -23,7 +23,7 @@
     &__card2 {
         width: 44vw;
         margin: 1rem;
-        background-color: #84A98C;
+        background-color:$Fourth;
         padding-left: 1rem;
         padding-bottom: 1rem;
         border-radius: .25rem;
@@ -48,7 +48,7 @@
             height: 2rem;
             border-radius: $CircleButton;
             border: 2px solid $Fourth;
-            color: #FFFFFF;
+            color: $White;
             background-color: transparent;
             margin-top: .25rem;
             

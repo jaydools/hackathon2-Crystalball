@@ -5,14 +5,12 @@
 .activity{
     display: flex;
     flex-direction: column;
-    border: 1px solid pink;
     width: 60%;
     background-image: url("../../../public/magic-ball.jpg");
     background-size: cover;
     background-position: right;
 
     &__textbox {
-        border: 1px solid red;
         padding: 1rem;
         margin-bottom: 15rem;
         color: $MainColour;
@@ -25,7 +23,6 @@
     &__button {
         display: flex;
         justify-content: center;
-        border: 1px solid green;
 
         &--clicker {
             width: 400px;
