@@ -31,6 +31,15 @@ function LeftContainerBottom({ activity, setActivity }) {
       }
       FreeAct()
   }
+  const handleSubmitNotFree = (event) => {
+    event.preventDefault();
+    async function NotFreeAct(){
+        const act = await axios.get(`https://www.boredapi.com/api/activity?minprice=0.1&maxprice=1`)
+        setActivity(act.data)
+        console.log(act.data)
+    }
+    NotFreeAct()
+}
     return (
         <body>
             <div className="container">
@@ -51,10 +60,11 @@ function LeftContainerBottom({ activity, setActivity }) {
                         <form onSubmit={handleSubmitFree}>
                         <button type="submit" className='button2'>Free</button>
                         </form>
-                        <form onSubmit={handleSubmitFree}>
+                        <form onSubmit={handleSubmitNotFree}>
                         <button type="submit" className='button3'>Not Free</button>
                         </form>
                  </div>
+            </div>
             </div>
         </body>
     )
