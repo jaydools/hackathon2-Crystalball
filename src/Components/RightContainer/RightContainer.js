@@ -14,4 +14,8 @@ function RightContainer() {
   )
 }
 
+<<<<<<< HEAD
 export default RightContainer
+=======
+export default RightContainer
+>>>>>>> develop

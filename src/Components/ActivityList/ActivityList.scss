@@ -1,0 +1,19 @@
+@use "../../styles/global" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/global"  as *; 
+
+.input {
+    width: 20vw;
+
+    @media (max-width: 588px) {
+        font-size:x-small;
+    }
+
+    &__type,
+    &__participants,
+    &__price {
+        margin: 0;
+    }
+    
+
+}

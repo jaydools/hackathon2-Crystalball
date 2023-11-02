@@ -1,0 +1,25 @@
+.containerRight {
+  width: 50vw;
+  background-color: #84A98C;
+  height: 24rem;
+}
+.containerRight__card {
+  margin: 3rem auto 0 auto;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  width: 40vw;
+  height: 18rem;
+  background-color: #354F52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerRight__card--inner {
+  margin: 0 auto 0 auto;
+  width: 30vw;
+  height: 9rem;
+  background-color: #2F3E46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=RightContainerBottom.css.map */

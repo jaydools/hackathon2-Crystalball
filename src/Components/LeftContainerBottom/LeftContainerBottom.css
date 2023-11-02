@@ -1,0 +1,65 @@
+.container {
+  background-color: #2F3E46;
+  color: #000000;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+.container__card {
+  width: 44vw;
+  margin-left: 2rem;
+  background-color: #84A98C;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+.container__card2 {
+  width: 44vw;
+  margin-left: 2rem;
+  background-color: #84A98C;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+.container__top {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.container__bottom {
+  padding-bottom: 2rem;
+}
+
+.submitBox {
+  color: #000000;
+  width: 13vw;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: #84A98C;
+}
+
+.button1 {
+  width: 10vw;
+  height: 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: #84A98C;
+  background-color: #FFFFFF;
+}
+
+.button2 {
+  width: 10vw;
+  height: 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: #84A98C;
+  background-color: #FFFFFF;
+}
+
+.button3 {
+  width: 10vw;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: #84A98C;
+}/*# sourceMappingURL=LeftContainerBottom.css.map */
