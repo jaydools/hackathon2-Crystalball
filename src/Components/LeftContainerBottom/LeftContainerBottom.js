@@ -1,10 +1,10 @@
 import './LeftContainerBottom.scss';
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function LeftContainerBottom() {
     const [activity, setActivity] = useState({}); // State to track the selected option
-    
   const handleSubmitRan = (event) => {
     event.preventDefault();
     async function RandomAct(){
@@ -32,11 +32,14 @@ function LeftContainerBottom() {
       }
       FreeAct()
   }
+
+
     return (
             <div className="container">
             <form onSubmit={handleSubmitRan}>
             <button type="submit">Random</button>
             </form>
+
             <form onSubmit={handleSubmitPart}>
                 <div className="container__top">
                     <div className="container__card">

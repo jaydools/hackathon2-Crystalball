@@ -1,16 +1,14 @@
+import ActivityList from '../ActivityList/ActivityList';
 import './RightContainerBottom.scss'
+import { useParams } from 'react-router-dom';
 
-function RightContainerBottom() {
-
-
-
-
+const RightContainerBottom = () => {
 
     return (
             <div className="containerRight">
                 <div className='containerRight__card'>
                     <div className='containerRight__card--inner'>
-                    <p>Our results will go down here in this corner</p>
+                    <ActivityList />
                     </div>
                 </div>
             </div>
