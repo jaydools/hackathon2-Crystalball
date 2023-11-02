@@ -44,19 +44,19 @@ function LeftContainerBottom({ activity, setActivity }) {
         <body>
             <div className="container">
             <form onSubmit={handleSubmitRan}>
-            <button type="submit">Random</button>
+            <button className='button1' type="submit">Random</button>
             </form>
             <form onSubmit={handleSubmitPart}>
                 <div className="container__top">
-                    <h3 label for="number">Number of Participants</h3>
-                    <input type="text" name="number" id="number" placeholder="  Add number of Participants" className="upload__form--top--box"/>
-                    <button type="submit">Submit</button>
+                    <h3 className='container__top--title' label for="number">Number of Participants</h3>
+                    <input type="text" name="number" id="number" placeholder="  Add number of Participants" className="container__top--form"/>
+                    <button className='container__top--button' type="submit">Submit</button>
                 </div>
                 </form>
                 
                 <div className="container__bottom">
                     <div className="container__card2">
-                        <h2>Price Point</h2>
+                        <h2 className='container__card2--title'>Price Point</h2>
                         <form onSubmit={handleSubmitFree}>
                         <button type="submit" className='button2'>Free</button>
                         </form>
