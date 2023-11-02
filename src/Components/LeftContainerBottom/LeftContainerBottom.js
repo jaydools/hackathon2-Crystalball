@@ -4,33 +4,36 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function LeftContainerBottom() {
-    const [activity, setActivity] = useState({}); // State to track the selected option
-  const handleSubmitRan = (event) => {
-    event.preventDefault();
-    async function RandomAct(){
-        const act = await axios.get(`https://www.boredapi.com/api/activity/`)
-        console.log(act.data)
-        setActivity(act.data)
-      }
-      RandomAct()
+    const [activity, setActivity] = useState([]); // State to track the selected option
+
+    const handleSubmitRan = (event) => {
+        event.preventDefault();
+        async function RandomAct(){
+            const act = await axios.get(`https://www.boredapi.com/api/activity/`)
+            console.log(act.data)
+            setActivity(act.data)
+        }
+        RandomAct()
   }
-  const handleSubmitPart = (event) => {
-    event.preventDefault();
-    async function PartAct(){
+  
+    const handleSubmitPart = (event) => {
+        event.preventDefault();
+        async function PartAct(){
         const formData = new FormData(event.target);
-    const num = formData.get('number');
-        const act = await axios.get(`https://www.boredapi.com/api/activity?participants=${num}`)
-        setActivity(act.data)
-      }
-      PartAct()
+        const num = formData.get('number');
+            const act = await axios.get(`https://www.boredapi.com/api/activity?participants=${num}`)
+            setActivity(act.data)
+        }
+        PartAct()
   }
-  const handleSubmitFree = (event) => {
-    event.preventDefault();
-    async function FreeAct(){
-        const act = await axios.get(`https://www.boredapi.com/api/activity?price=0.0`)
-        setActivity(act.data)
-      }
-      FreeAct()
+  
+    const handleSubmitFree = (event) => {
+        event.preventDefault();
+        async function FreeAct(){
+            const act = await axios.get(`https://www.boredapi.com/api/activity?price=0.0`)
+            setActivity(act.data)
+        }
+        FreeAct()
   }
 
 

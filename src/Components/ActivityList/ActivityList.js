@@ -3,7 +3,8 @@ import React from 'react';
 const ActivityList = ({ activities }) => {
   return (
     <div>
-      {activities.map((activity, index) => (
+      {activities &&
+      activities.map((activity, index) => (
         <div key={index}>
           <h2>{activity.activity}</h2>
           <p>Type: {activity.type}</p>
