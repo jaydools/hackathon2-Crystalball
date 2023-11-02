@@ -1,16 +1,62 @@
 .container {
+    background-color: #2F3E46;
+    color: #000000;
     width: 50vw;
-    border-right: 3px solid blue;
     display: flex;
     flex-direction: column;
+    &__card {
+        width: 44vw;
+        margin-left: 2rem;
+        background-color: #84A98C;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border-radius: .25rem;
+    }
+    &__card2 {
+        width: 44vw;
+        margin-left: 2rem;
+        background-color: #84A98C;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border-radius: .25rem;
+    }
     &__top {
-        border-bottom: 3px solid blue;
         padding-bottom: 2rem;
-        border-top: 3px solid blue;
         padding-top: 2rem;
     }
     &__bottom {
-        border-bottom: 3px solid blue;
         padding-bottom: 2rem;
     }
+}
+
+.submitBox {
+    color: #000000;
+    width: 13vw;
+    height: 2rem;
+    border-radius: .25rem;
+    border: #84A98C;
+}
+.button1 {
+    width: 10vw;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: #84A98C;
+    background-color: #FFFFFF;
+}
+.button2 {
+    width: 10vw;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: #84A98C;
+    background-color: #FFFFFF;
+}
+.button3 {
+    width: 10vw;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #84A98C;
 }

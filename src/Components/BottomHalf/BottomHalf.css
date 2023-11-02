@@ -1,1 +1,4 @@
-/*# sourceMappingURL=BottomHalf.css.map */
+.containerBottomHalf {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=BottomHalf.css.map */
