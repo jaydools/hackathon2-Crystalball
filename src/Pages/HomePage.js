@@ -5,11 +5,8 @@ import Nav from './../Components/Nav/Nav';
 import TopHalf from './../Components/TopHalf/TopHalf';
 import BottomHalf from './../Components/BottomHalf/BottomHalf';
 
+
 function HomePage() {
-
-
-
-
 
     return (
         <body>

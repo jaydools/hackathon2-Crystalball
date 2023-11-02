@@ -5,15 +5,23 @@
     background-color: $MainColour;
     display: flex;
     justify-content: space-between;
-    height: 100px;
-    position: sticky;
+    width: 100%;
 }
 
 .left {
     padding: 1rem;
 
     &__text {
-        color: $OffWhite
+        color: $OffWhite;
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 300;
+
+        @media (max-width: 588px) {
+            font-size: 1rem;
+            text-wrap: nowrap;
+            padding-top: 1rem;
+        }
     }
 }
 
@@ -24,13 +32,29 @@
     &__li {
         display: flex;
         margin-bottom: 0;
+        @media (max-width: 588px) {
+            padding: 0;
+        }
 
         &--1,
         &--2,
         &--3 {
-            padding: 1rem 1rem 0 1rem;
+            padding: 1rem 1rem 1rem 1rem;
             list-style: none;
             color: $OffWhite;
+
+            @media (max-width: 588px) {
+            font-size: .75rem;
+            text-wrap: nowrap;
+            padding-left: 1px;;
+            }
         }
+
+        &--1:hover,
+        &--2:hover,
+        &--3:hover {
+            border-bottom: 3px solid $OffWhite;
+        }
+
     }
 }

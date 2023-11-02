@@ -7,7 +7,7 @@ function LeftContainer() {
     return (
         <div className="activity">
             <div className="activity__textbox">
-                <h1 className="activity__textbox--font">Choose Activity</h1>
+                <h1 className="activity__textbox--font">Activity Selector</h1>
             </div>
         </div>
     )

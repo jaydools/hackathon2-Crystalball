@@ -4,12 +4,12 @@
 
 .explination {
     padding: 1rem;
-    background-color: $MainColour;      // variables ARE working
+    background-color: $MainColour;
     width: 40%;
 
-    &__header {
-        // @include mobileH2;          // font mixins arent working -_- 
+    &__header { 
         color: $OffWhite;
+        margin-top: 0;
     }
 
     &__text {
