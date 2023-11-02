@@ -1,25 +1,35 @@
+@use "../../styles/global" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/global"  as *; 
+
 .containerRight {
     width: 50vw;
-    background-color: #84A98C;
+    background-image: url("../../../public/pad.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 24rem;
+    background-color:$MainColour;
+
     &__card {
         margin: 3rem auto 0 auto;
         color: #FFFFFF;
         padding-left: 1rem;
         width: 40vw;
         height: 18rem;
-        background-color: #354F52;
+        background-color: rgba (53,79,82, .5);
         display: flex;
         justify-content: center;
         align-items: center;
+        
         &--inner {
             margin: 0 auto 0 auto;
-            width: 30vw;
+            width: 25vw;
             height: 9rem;
-            background-color: #2F3E46;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: black;
         }
     }
 }

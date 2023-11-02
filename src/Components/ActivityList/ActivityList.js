@@ -1,14 +1,15 @@
 import React from 'react';
+import "./ActivityList.scss"
 
 const ActivityList = ({ activity }) => {
   return (
     <div>
       {activity && (
-        <div>
-          <h2>{activity.activity}</h2>
-          <p>Type: {activity.type}</p>
-          <p>Participants: {activity.participants}</p>
-          <p>Price: {activity.price}</p>
+        <div className='input'>
+          <h2 className='input__header'>{activity.activity}</h2>
+          <p className='input__type'>Type: {activity.type}</p>
+          <p className='input__participants'>Participants: {activity.participants}</p>
+          <p className='input__price'>Price: {activity.price}</p>
         </div>
         )}
     </div>
