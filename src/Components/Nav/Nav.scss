@@ -1,0 +1,36 @@
+@use "../../styles/global" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/global"  as *; 
+.nav {
+    background-color: $MainColour;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    position: sticky;
+}
+
+.left {
+    padding: 1rem;
+
+    &__text {
+        color: $OffWhite
+    }
+}
+
+.right {
+    display: flex;
+    align-items:center;
+
+    &__li {
+        display: flex;
+        margin-bottom: 0;
+
+        &--1,
+        &--2,
+        &--3 {
+            padding: 1rem 1rem 0 1rem;
+            list-style: none;
+            color: $OffWhite;
+        }
+    }
+}
